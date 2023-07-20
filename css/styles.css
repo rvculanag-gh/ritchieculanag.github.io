@@ -48,6 +48,7 @@ section nav h1 {
 section nav a {
   text-decoration: none;
   transition: all ease-in-out 0.1s;
+  color: var(--clr-neutral-dark);
 }
 
 section nav a:hover {
@@ -202,6 +203,23 @@ section nav a:hover {
 .about .content .info {
   padding: 1rem 0;
   padding-left: 2rem;
+}
+
+.about .info .callout {
+  font-size: var(--font-size-title-medium);
+  padding-right: 0.5rem;
+}
+
+.about .info--programming .callout {
+  color: var(--clr-primary-orange);
+}
+
+.about .info--age .callout {
+  color: var(--clr-primary-blue);
+}
+
+.about .info--commits .callout {
+  color: var(--clr-secondary);
 }
 
 .about .content .info--programming {
