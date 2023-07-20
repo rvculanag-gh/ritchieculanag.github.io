@@ -13,5 +13,10 @@
   --font-size-title-medium: 2.5rem;
   --font-size-title-small: 2rem;
 
+  --font-weight-bold: bold;
+  --font-weight-medium: medium;
+  --font-weight-normal: normal;
+  --font-weight-light: light;
+
   --section-padding-vertical: 10rem;
 }
