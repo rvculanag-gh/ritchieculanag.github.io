@@ -36,6 +36,7 @@ section nav ul {
 section nav li:first-child {
   flex-basis: 100%;
   text-align: center;
+  font-weight: var(--font-weight-medium);
 }
 
 section nav h1 {
@@ -66,6 +67,7 @@ section nav a:hover {
 /* Hero section styles */
 .hero .content {
   display: flex;
+  gap: 2rem;
 }
 
 .hero .content p:first-child {
@@ -76,9 +78,10 @@ section nav a:hover {
 .hero .content h2 {
   display: block;
   font-size: var(--font-size-title-small);
-  font-weight: var(--font-weight-bold);
+  font-weight: 900;
   font-family: "Playfair Display", serif;
 }
+
 .hero .content .purpose {
   color: var(--clr-primary-orange);
 }
@@ -102,6 +105,37 @@ section nav a:hover {
 }
 
 @media (min-width: 1200px) {
+  .hero .boxes {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero .boxes .box {
+    transition: 0.2 all ease-in-out;
+  }
+
+  .hero .boxes .box:hover {
+    width: 150px;
+    transition: 0.2 all ease-in-out;
+  }
+
+  .hero .boxes .box--orange {
+    background: var(--clr-primary-orange);
+  }
+
+  .hero .boxes .box--blue {
+    background: var(--clr-primary-blue);
+  }
+
+  .hero .boxes .box--yellow {
+    background: var(--clr-secondary);
+  }
+
+  .hero .boxes .box--green {
+    background: var(--clr-tertiary);
+  }
+
   .hero .content > div:first-child {
     max-width: 60%;
   }

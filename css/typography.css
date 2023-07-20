@@ -4,6 +4,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: var(--font-size-body);
   background-color: var(--clr-neutral-light);
+  color: var(--clr-neutral-dark);
 }
 
 h1,
