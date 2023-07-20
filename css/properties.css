@@ -8,7 +8,10 @@
   --clr-neutral-dark: #111111;
 
   --font-size-body: 1.2rem;
-  --font-size-title: 2.5rem;
+  --font-size-subtitle: 1.5rem;
+  --font-size-title-large: 3.5rem;
+  --font-size-title-medium: 2.5rem;
+  --font-size-title-small: 2rem;
 
   --section-padding-vertical: 10rem;
 }

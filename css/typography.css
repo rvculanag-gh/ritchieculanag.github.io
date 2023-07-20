@@ -1,0 +1,42 @@
+@import url("properties.css");
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--font-size-title-large);
+}
+
+h2 {
+  font-size: var(--font-size-title-medium);
+}
+
+h3 {
+  font-size: var(--font-size-title-small);
+}
+
+p,
+li,
+a {
+  font-size: var(--font-size-body);
+  color: var(--clr-neutral-dark);
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
