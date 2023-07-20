@@ -48,6 +48,10 @@ li {
   margin: 0;
 }
 
+a {
+  color: var(--clr-primary-blue);
+}
+
 a:hover {
   text-decoration: none;
 }
