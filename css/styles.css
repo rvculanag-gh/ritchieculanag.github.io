@@ -1,7 +1,7 @@
 @import url("properties.css");
 
 section {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 5rem 0;
 }
@@ -18,7 +18,7 @@ section > nav > ul {
 /* Navigation bar styles */
 section nav {
   padding: 1rem 0;
-  border-bottom: 1px solid var(--clr-neutral-dark);
+  border-bottom: 2px solid var(--clr-neutral-dark);
 }
 
 section nav ul {
@@ -62,6 +62,7 @@ section nav a:hover {
 /* Hero section styles */
 .hero .content {
   display: flex;
+  gap: 5rem;
 }
 
 .hero .content > div {
@@ -79,8 +80,31 @@ section nav a:hover {
   font-weight: var(--font-weight-bold);
   font-family: "Playfair Display", serif;
 }
+.hero .content .purpose {
+  color: var(--clr-primary-orange);
+}
 
-.hero .boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* Divider style */
+.divider .content {
+  display: flex;
+}
+
+.divider .accent {
+  width: 25%;
+}
+
+.accent--orange {
+  border: 1px solid var(--clr-primary-orange);
+}
+
+.accent--blue {
+  border: 1px solid var(--clr-primary-blue);
+}
+
+.accent--yellow {
+  border: 1px solid var(--clr-secondary);
+}
+
+.accent--green {
+  border: 1px solid var(--clr-tertiary);
 }
