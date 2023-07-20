@@ -65,8 +65,8 @@ section nav a:hover {
   gap: 5rem;
 }
 
-.hero .content > div {
-  width: 50%;
+.hero .content > div:first-child {
+  width: 70%;
 }
 
 .hero .content p:first-child {
