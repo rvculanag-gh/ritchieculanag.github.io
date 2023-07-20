@@ -3,6 +3,16 @@
 section {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 5rem 0;
+}
+
+section:first-child {
+  padding: 0;
+}
+
+section > div,
+section > nav > ul {
+  padding: 0 1.5rem;
 }
 
 /* Navigation bar styles */
@@ -42,10 +52,35 @@ section nav a:hover {
 @media (min-width: 520px) {
   section nav ul {
     flex-wrap: nowrap;
-    padding: 0 1.5rem;
   }
 
   section nav li:first-child {
     text-align: unset;
   }
+}
+
+/* Hero section styles */
+.hero .content {
+  display: flex;
+}
+
+.hero .content > div {
+  width: 50%;
+}
+
+.hero .content p:first-child {
+  font-size: var(--font-size-subtitle);
+}
+
+.hero .content p:first-child span,
+.hero .content h2 {
+  display: block;
+  font-size: var(--font-size-title-large);
+  font-weight: var(--font-weight-bold);
+  font-family: "Playfair Display", serif;
+}
+
+.hero .boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
