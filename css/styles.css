@@ -6,6 +6,10 @@ section {
   padding: 5rem 0;
 }
 
+section.divider {
+  padding: 0;
+}
+
 section:first-child {
   padding: 0;
 }
@@ -62,11 +66,6 @@ section nav a:hover {
 /* Hero section styles */
 .hero .content {
   display: flex;
-  gap: 5rem;
-}
-
-.hero .content > div:first-child {
-  width: 70%;
 }
 
 .hero .content p:first-child {
@@ -76,12 +75,36 @@ section nav a:hover {
 .hero .content p:first-child span,
 .hero .content h2 {
   display: block;
-  font-size: var(--font-size-title-large);
+  font-size: var(--font-size-title-small);
   font-weight: var(--font-weight-bold);
   font-family: "Playfair Display", serif;
 }
 .hero .content .purpose {
   color: var(--clr-primary-orange);
+}
+
+@media (min-width: 520px) {
+  .hero .content p:first-child span,
+  .hero .content h2 {
+    font-size: var(--font-size-title-medium);
+  }
+}
+
+@media (min-width: 720px) {
+  .hero .content > div:first-child {
+    max-width: 80%;
+  }
+
+  .hero .content p:first-child span,
+  .hero .content h2 {
+    font-size: var(--font-size-title-large);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .content > div:first-child {
+    max-width: 60%;
+  }
 }
 
 /* Divider style */
