@@ -1,0 +1,51 @@
+@import url("properties.css");
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Navigation bar styles */
+section nav {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--clr-neutral-dark);
+}
+
+section nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+section nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+section nav h1 {
+  font-size: var(--font-size-title-small);
+  font-family: "Playfair Display", serif;
+}
+
+section nav a {
+  text-decoration: none;
+  transition: all ease-in-out 0.1s;
+}
+
+section nav a:hover {
+  transition: all 0.1s;
+  color: var(--clr-primary-orange);
+}
+
+@media (min-width: 520px) {
+  section nav ul {
+    flex-wrap: nowrap;
+    padding: 0 1.5rem;
+  }
+
+  section nav li:first-child {
+    text-align: unset;
+  }
+}
