@@ -276,6 +276,7 @@ section nav a:hover {
 .skills .content .skills {
   display: grid;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .skills .skill--java,
@@ -332,4 +333,16 @@ section nav a:hover {
 .skills i:hover {
   border: 1px solid var(--clr-neutral-dark);
   transition: 0.2 all ease-in-out;
+}
+
+@media (min-width: 720px) {
+  .skills .content .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 920px) {
+  .skills .content .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
