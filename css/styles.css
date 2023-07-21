@@ -234,10 +234,6 @@ section nav a:hover {
   border-left: 2px solid var(--clr-secondary);
 }
 
-.about .content h2 {
-  font-size: 1.8rem;
-}
-
 .about .content h3 {
   font-size: 1.5rem;
 }
@@ -274,4 +270,66 @@ section nav a:hover {
   .about .content-divider .infos {
     display: block;
   }
+}
+
+/* Skills section */
+.skills .content .skills {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills .skill--java,
+.skills .skill--html5 {
+  border: 2px solid var(--clr-primary-orange);
+}
+
+.skills .skill--javascript {
+  border: 2px solid var(--clr-secondary);
+}
+
+.skills .skill--css3 {
+  border: 2px solid var(--clr-primary-blue);
+}
+
+.skills .skill--vuejs {
+  border: 2px solid var(--clr-tertiary);
+}
+
+.skills .skill .skill-info {
+  padding: 2rem;
+}
+
+.skills i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  min-height: 200px;
+  transition: 0.2 all ease-in-out;
+  color: var(--clr-neutral-light);
+}
+
+.skills i.bxl-java {
+  background: var(--clr-primary-orange);
+}
+
+.skills i.bxl-javascript {
+  background: var(--clr-secondary);
+}
+
+.skills i.bxl-html5 {
+  background: var(--clr-primary-orange);
+}
+
+.skills i.bxl-css3 {
+  background: var(--clr-primary-blue);
+}
+
+.skills i.bxl-vuejs {
+  background: var(--clr-tertiary);
+}
+
+.skills i:hover {
+  border: 1px solid var(--clr-neutral-dark);
+  transition: 0.2 all ease-in-out;
 }
