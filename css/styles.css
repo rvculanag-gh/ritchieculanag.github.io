@@ -256,6 +256,10 @@ section nav a:hover {
 }
 
 @media (min-width: 920px) {
+  .about .content h2 {
+    font-size: var(--font-size-title-medium);
+  }
+
   .about .content-divider {
     display: flex;
     gap: 2rem;
