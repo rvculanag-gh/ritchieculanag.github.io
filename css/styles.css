@@ -22,6 +22,7 @@ section > nav > ul {
 
 /* Navigation bar styles */
 section.nav {
+  max-width: none;
   background: var(--clr-neutral-light);
   position: sticky;
   top: 0;
@@ -29,6 +30,8 @@ section.nav {
 }
 
 section nav {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem 0;
   border-bottom: 2px solid var(--clr-neutral-dark);
 }
